@@ -37,7 +37,7 @@ body {
   top: 41.5rem;
   /* border: 10px black solid; */
   left: 29.5rem;
-  width: 950px;
+  width: 1030px;
   height: 18rem;
   background-color: #250030;
 
@@ -56,7 +56,7 @@ body {
   background-color: #4B1954;
   top: 58.5rem;
   height: 140px;
-  width: 1070px;
+  width: 1105px;
   left: 25rem;
 }
 
@@ -89,8 +89,9 @@ body {
   right: 0px;
   bottom: 100px;
   border-top: 60px solid transparent;
-  border-right: 80px solid #338089;
+  border-right: 80px solid #080D45;
   border-bottom: 40px solid transparent;
+  z-index:2;
 }
 
 .triangle:hover{
@@ -178,7 +179,7 @@ body {
   letter-spacing: 3px;
   color: white;
   
-  z-index: 2;
+  
   font-style: italic;
 }
 .nova{
@@ -192,7 +193,7 @@ transition-duration: 0.9s;
 
 
 .triclick1 {
-  position: absolute;
+  position: fixed;
   right: 0px;
   top: 200px;
   width: 260px;
@@ -201,6 +202,8 @@ transition-duration: 0.9s;
   background: #000942;
   border: 4px solid #338089;
   opacity: 0;
+  /* z-index: 2; */
+  
 }
 
 .triclick1 li {
@@ -212,7 +215,7 @@ transition-duration: 0.9s;
 }
 
 .triclick2 {
-  position: absolute;
+  position: fixed;
   right: -230px;
   top: 200px;
   width: 260px;
@@ -221,6 +224,7 @@ transition-duration: 0.9s;
   background: #338089;
   border: 4px solid #338089;
   opacity: 0;
+  /* z-index: 2; */
 }
 
 .box {
@@ -228,7 +232,7 @@ transition-duration: 0.9s;
   position: absolute;
   top: 488.5px;
   height: 587.5px;
-  width: 23px;
+  width: 63px;
   left: 0px;
 }
 
@@ -236,14 +240,21 @@ transition-duration: 0.9s;
 
 
   position: relative;
-  width: 0;
-  left: 23px;
+  width: 0rem;
+  left: 1.3rem;
   top: -10px;
   height: 498px;
   border-bottom: 588.5px solid #021825;
   border-right: 300px solid transparent;
 }
-
+/* .gayab{
+  width:20rem;
+  height:30rem;
+  /* margin-top:10rem; */
+  /* background-color: red; */
+  /* position: relative;
+  top:37rem;
+} */ 
 
 
 .hover1 {
@@ -384,7 +395,7 @@ transition-duration: 0.9s;
   letter-spacing: NaNpx;
   color: #24676F;
   text-transform: capitalize;
-  opacity: 1;
+  opacity: 0;
   font: italic;
   font-size: larger;
   font-style: italic;
@@ -393,8 +404,41 @@ transition-duration: 0.9s;
   top:26rem;
   right:9rem;
   font-size: 1.5rem;
+
   
   
+}
+
+.moto7{
+  text-align: center;
+  letter-spacing: NaNpx;
+  color: #24676F;
+  text-transform: capitalize;
+  opacity: 0;
+  font: italic;
+  font-size: larger;
+  font-style: italic;
+  z-index: 11;
+  position:absolute;
+  top:26rem;
+  right:9rem;
+  font-size: 1.5rem;
+}
+
+.moto8{
+  text-align: center;
+  letter-spacing: NaNpx;
+  color: #24676F;
+  text-transform: capitalize;
+  opacity: 0;
+  font: italic;
+  font-size: larger;
+  font-style: italic;
+  z-index: 11;
+  position:absolute;
+  top:24rem;
+  right:7rem;
+  font-size: 1.7rem;
 }
 
 .heading1{
@@ -405,6 +449,32 @@ transition-duration: 0.9s;
   text-align: center;
   letter-spacing: NaNpx;
   color: #BE9E03;
+  text-transform: capitalize;
+  position: absolute;
+  opacity: 0;
+}
+
+.heading2{
+  z-index: 11;
+  top:22rem;
+  right:16rem;
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: NaNpx;
+  color: #03be32;
+  text-transform: capitalize;
+  position: absolute;
+  opacity: 0;
+}
+
+.heading3{
+  z-index: 11;
+  top:18rem;
+  right:16rem;
+  font-size: 2.2rem;
+  text-align: center;
+  letter-spacing: NaNpx;
+  color: #812818;
   text-transform: capitalize;
   position: absolute;
   opacity: 0;
@@ -430,4 +500,38 @@ transition-duration: 0.9s;
   top: 0px;
   right:0rem;
   opacity: 0;
+}
+
+.prize{
+  text-align: center;
+  letter-spacing: NaNpx;
+  color: #24676F;
+  text-transform: capitalize;
+  opacity: 0;
+  font: italic;
+  font-size: larger;
+  position:absolute;
+  top:1rem;
+  left: 30rem;
+  font-size: 3rem;
+}
+
+.it{
+  font-style: italic;
+  text-align: center;
+  letter-spacing: NaNpx;
+  color: #24676F;
+  text-transform: capitalize;
+  opacity: 0;
+  font: italic;
+  font-size: larger;
+  position:absolute;
+  top:5rem;
+  left: 22rem;
+  font-size: 2.5rem;
+}
+
+.cancel{
+ background-color:black
+
 }
