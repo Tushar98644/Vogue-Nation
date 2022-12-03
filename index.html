@@ -6,14 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="1.css" />
-  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+ <title>Document</title>
 </head>
 
 <body id="body">
-  <div class="main" onmouseenter="show()" onmouseleave="leave()">
+  <div class="main" id="main" onmouseenter="show()" onmouseleave="leave()">
 
 
-    <div class="moto">
+    <div class="moto" id="moto">
 
       <img src="Logo_White/Logo_White.png" alt="Alcheringa" class="logo" id="logo" />
 
@@ -31,7 +33,7 @@
 
     </div>
 
-    <div class="shaper">
+    <div class="shaper" id="shaper">
       <div class="leftshape">
 
         <div><img class="V" src="top bg/V.png" alt="" onmouseenter="leave()" onmouseleave="show()" /></div>
@@ -43,9 +45,10 @@
 
         </div>
       </div>
-      <div class="animation" onmouseenter="leave()" onmouseleave="show()" onmouseenter="show1()" onmouseleave="leave1()">
+      <div class="animation" onmouseenter="leave()" onmouseleave="show()" onmouseenter="show1()"
+        onmouseleave="leave1()">
         <div class="hover1" id="option" onmouseenter="show1()" onmouseleave="leave1()">
-          <ul class="option"  onmouseenter="show1()" onmouseleave="leave1()">
+          <ul class="option" onmouseenter="show1()" onmouseleave="leave1()">
             <li>HOME</li>
 
             <li>EVENTS</li>
@@ -80,35 +83,53 @@
         </div>
         <div class="lefttriangle2" onmouseenter="leave()" onmouseleave="show()"></div>
         <div class="p2" onmouseenter="leave()" onmouseleave="show()"></div>
-        <div class="triangle" onmouseenter="leave()" onmouseleave="show()"></div>
+        <div class="triangle" id="triangle" onclick="menu()"></div>
       </div>
 
-      <!-- <div class="triclick1" id="t2">
+      <div class="triclick1" id="triclick1">
     
-      <li>HOME</li>
-      <li>ABOUT US</li>
-      <li>EVENTS</li>
-      <li>HAUTE COUTURE</li>
-      <li>STATES OF DRESS</li>
-      <li>GLAMOUR NOVA</li>
-      <li>STYLE GALLERY</li>
-      <li>OUT TEAM</li>
-      <li>GET IN TOUCH</li>
-    
-      </div> -->
-      <!-- <div class="triclick2">
-        </div> -->
-      <div class="secondpage" onmouseenter="leave()" onmouseleave="show()">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Events</li>
+        <li>Haute Couture</li>
+        <li>States of Dress</li>
+        <li>Glamour Nova</li>
+        <li>Style Gallery</li>
+        <li>Our Team</li>
+        <li>Get in Touch</li>
+      
+         </div> 
+      
+      <div class="triclick2" id="triclick2">
+        <a class="close" href=""><i class="gg-close"></i></a>
+      </div>
+      <div class="secondpage" id="secondpage" onmouseenter="leave()" onmouseleave="show()">
 
         <div><img class="img1" src="./2ndPage/pexels-arsham-haghani-3387577.png" alt=""></div>
-        <div><img class="img2" src="./2ndPage/d s.png" alt=""></div>
+        <h1 class="moto3">GLAMOUR <br>NOVA</br></h1>
+
+        <div onmouseenter="point()" onmouseleave="pointoff()"><img class="img2" src="./2ndPage/d s.png" alt=""></div>
         <img class="img3" src="./2ndPage/justin-essah-jSEu-6tlz_0-unsplash.png" alt="">
+        <div class="rec1"></div>
+        <div class="rec2"></div>
+        <div class="rec3"></div>
 
+
+        <h1 class="moto4">STATE<br>OF DRESS</br></h1>
+        <h1 class="moto5">HAUTE COUTURE</h1>
 
       </div>
+
       <div class="last">
-        
+        <h2 class="heading1" id="heading1">GLAMOUR NOVA</h2>
+        <h2 class="moto6" id="moto6">
+          Glamour Nova, where the most <br> glamorous people show off their skills as <br> they do elegant photoshoots
+          at exotic <br> locations of one of the most beautiful <br> colleges in India <br> IIT Guwahati
+        </h2>
+
       </div>
+
+
     </div>
 </body>
 <script src="1.js"></script>

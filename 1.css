@@ -10,10 +10,10 @@ body {
   top: 0px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: -580px -317px;
+  background-position: -580px -325px;
   opacity: 1;
   width: 1519px;
-  height: 1426px;
+  height: 1415px;
 }
 
 .V {
@@ -89,9 +89,16 @@ body {
   right: 0px;
   bottom: 100px;
   border-top: 60px solid transparent;
-  border-right: 80px solid #080D45;
+  border-right: 80px solid #338089;
   border-bottom: 40px solid transparent;
 }
+
+.triangle:hover{
+  border-right-color: #338089;
+  
+}
+
+
 
 .logo {
   position: absolute;
@@ -136,7 +143,48 @@ body {
   /* transform: translateX(-450px); */
   /* transition-duration: 0.9s; */
 }
-
+.moto3{
+  position: absolute;
+  right: 44.5rem;
+  top: 66.5rem;
+  font-size: 2rem;
+  text-align: left;
+  letter-spacing: 3px;
+  color: white;
+  
+  z-index: 9;
+  font-style: italic;
+  
+}
+.moto4{
+  position: absolute;
+  right: 46rem;
+  top: 102rem;
+  font-size: 2rem;
+  text-align: left;
+  letter-spacing: 3px;
+  color: white;
+  
+  z-index: 2;
+  font-style: italic;
+  
+}
+.moto5{
+  position: absolute;
+  right: 70rem;
+  top: 104rem;
+  font-size: 2rem;
+  text-align: left;
+  letter-spacing: 3px;
+  color: white;
+  
+  z-index: 2;
+  font-style: italic;
+}
+.nova{
+ text-align: right;
+  
+}
 /* .moto1:hover{
   transform: translateX(-450px); 
 transition-duration: 0.9s;
@@ -152,6 +200,7 @@ transition-duration: 0.9s;
   transform: skew(-20deg);
   background: #000942;
   border: 4px solid #338089;
+  opacity: 0;
 }
 
 .triclick1 li {
@@ -159,6 +208,7 @@ transition-duration: 0.9s;
   margin: 30px;
 
   list-style-type: none;
+  
 }
 
 .triclick2 {
@@ -170,6 +220,7 @@ transition-duration: 0.9s;
   transform: skew(-20deg);
   background: #338089;
   border: 4px solid #338089;
+  opacity: 0;
 }
 
 .box {
@@ -235,34 +286,36 @@ transition-duration: 0.9s;
 
 }
 
-.img1:hover,
+ .img1:hover,
 .img2:hover,
 .img3:hover {
   filter: grayscale(0%);
   transition: .5s ease-in-out;
 
-}
+} 
 
 .img2 {
 
-  height: 660px;
-  width: 326px;
+  height: 42.5rem;
+  width: 27rem;
   filter: grayscale(100%);
-  margin-top:1.8rem;
-  margin-left: 1rem;
-  transform: rotateX(200);
+  margin-top:.5rem;
+  margin-left:0.5rem;
+  transform: rotateZ(-0.5deg);
+
 
 }
 
 .img3 {
   position: absolute;
-  height: 700px;
+  height: 500px;
   width: 326px;
   left: 500px;
   top: 1096px;
   margin-top: -1.3rem;
-  margin-left: -4rem;
-  filter: grayscale(100%)
+  margin-left: -5rem;
+  filter: grayscale(100%);
+  z-index: 5;
 }
 
 .secondpage {
@@ -271,10 +324,11 @@ transition-duration: 0.9s;
 
 .last{
   background-color: black;
-  height:700px;
+  height:43.6rem;
   width: 726px;
-  margin-left:50rem;
-  margin-top:-44rem;
+  margin-left:48rem;
+  margin-top:-44.2rem;
+  position: absolute;
 
 }
 /* .moto1:hover,.moto2:hover{
@@ -296,3 +350,84 @@ transition-duration: 0.9s;
 
   transition-duration: 0.6s;
 } */
+
+.rec1{
+  width:14rem;
+  height: 0.4rem;
+  background-color:white;
+  z-index: 3;
+  margin-top: -.55em;
+  margin-left: -32rem;
+}
+
+.rec2{
+  width:10rem;
+  height: 0.4rem;
+  background-color:white;
+  z-index: 3;
+  margin-top: 42.8rem;
+  margin-left: -14rem;
+}
+
+.rec3{
+  width:12rem;
+  height: 0.4rem;
+  background-color:white;
+  z-index: 3;
+  margin-top: -0.7rem;
+  margin-left: 16rem;
+  z-index: 7;
+}
+
+.moto6{
+  text-align: center;
+  letter-spacing: NaNpx;
+  color: #24676F;
+  text-transform: capitalize;
+  opacity: 1;
+  font: italic;
+  font-size: larger;
+  font-style: italic;
+  z-index: 11;
+  position:absolute;
+  top:26rem;
+  right:9rem;
+  font-size: 1.5rem;
+  
+  
+}
+
+.heading1{
+  z-index: 11;
+  top:22rem;
+  right:16rem;
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: NaNpx;
+  color: #BE9E03;
+  text-transform: capitalize;
+  position: absolute;
+  opacity: 0;
+}
+
+.gg-close {
+  box-sizing: border-box;
+  position: relative;
+  right: 0rem;
+  top: 000px;
+  /* position: relative; */
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 40px
+}
+
+.triclick2 button{
+  /* background-color: aqua; */
+  position: relative;
+  top: 0px;
+  right:0rem;
+  opacity: 0;
+}
