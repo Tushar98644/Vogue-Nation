@@ -16,6 +16,18 @@ const triclick1=document.getElementById('triclick1')
 const triclick2=document.getElementById('triclick2')
 const prize=document.getElementById('prize')
 const it=document.getElementById('it')
+const v=document.getElementById('v')
+// const cancel=document.getElementById('cancel')
+const rightshape=document.getElementById('rightshape')
+const box=document.getElementById('box')
+const leftshape=document.getElementById('leftshape')
+// const img1=document.getElementById('img1')
+// const img2=document.getElementById('img2')
+// const img3=document.getElementById('img3')
+const full=document.getElementById('full')
+
+
+
 
 // const main=document.getElementById('main')
 // const moto=document.getElementById('moto')
@@ -41,13 +53,35 @@ function leave() {
 }
 
 function press(){
-  body.style.backdropFilter="blur(15px)";
+  body.style.backdropFilter="blur(20px)";
+  body.style.overflow="hidden";
+  triclick1.style.opacity=1;
+  triclick2.style.opacity=1;
+  triangle.style.opacity=0;
+  // full.style.backdropFilter="blur(20px)";
+  // leftshape.style.backdropFilter="blur(20px)";
+  // moto1.style.backdropFilter="blur(20px)";
+  // img1.style.backdropFilter="blur(15px)";
+  // img2.style.backdropFilter="blur(15px)";
+  // img3.style.backdropFilter="blur(15px)";
+  // v.style.backdropFilter="blur(15px)";
   // secondpage.style.backdropFilter="blur(15px)";
+  
 }
 
 function point() {
    heading1.style.opacity=1;
    moto6.style.opacity=1;
+}
+
+function cancel(){
+  triclick1.style.opacity=0;
+  triclick2.style.opacity=0;
+  body.style.backdropFilter="blur(0px)";
+  body.style.overflow="initial";
+  triangle.style.opacity=1;
+  triangle.style.position="fixed"
+  
 }
 
 function pointoff() {
@@ -63,12 +97,6 @@ function point1() {
 function pointoff1() {
  heading2.style.opacity=0;
  moto7.style.opacity=0;
-}
-
-function menu(){
-  triclick1.style.opacity=1;
-  triclick2.style.opacity=1;
-  triangle.style.opacity=0;
 }
 
 function point2() {
